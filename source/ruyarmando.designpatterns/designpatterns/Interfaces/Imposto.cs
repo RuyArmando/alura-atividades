@@ -1,4 +1,6 @@
-﻿namespace designpatterns.Interfaces
+﻿using designpatterns.Models;
+
+namespace designpatterns.Interfaces
 {
     public interface Imposto
     {

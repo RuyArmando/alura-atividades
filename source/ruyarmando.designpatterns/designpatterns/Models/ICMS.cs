@@ -6,7 +6,8 @@ namespace designpatterns.Models
     {
         public double Calcula(Orcamento orcamento)
         {
-            return orcamento.Valor * 0.1;
+            // ICMS deve ser 5% do valor do orçamento mais o valor fixo de R$ 50,00
+            return (orcamento.Valor * 0.5) + 50;
         }
     }
 }

@@ -6,7 +6,8 @@ namespace designpatterns.Models
     {
         public double Calcula(Orcamento orcamento)
         {
-            return orcamento.Valor * 0.1;
+            // ISS deve ser 6% do valor do orçamento
+            return orcamento.Valor * 0.06;
         }
     }
 }

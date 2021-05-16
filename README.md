@@ -1,2 +1,2 @@
 # alura-atividades
-Atividades Alura
+Atividades e exercícios realizados durante o curso da Alura.

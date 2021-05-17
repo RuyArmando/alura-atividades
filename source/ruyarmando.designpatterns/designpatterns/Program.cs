@@ -1,5 +1,6 @@
-﻿using designpatterns.Interfaces;
+﻿using designpatterns.Helpers;
 using designpatterns.Models;
+using System;
 
 namespace designpatterns
 {
@@ -7,13 +8,21 @@ namespace designpatterns
     {
         static void Main(string[] args)
         {
-            Imposto iccc = new ICCC();
+            var calculador = new CalculadorDeDescontos();
 
-            var orcamento = new Orcamento(3500.0);
-            var calculador = new CalculadorDeImposto();
+            var orcamento = new Orcamento(1500);
 
-            // Calculando o ICCC    
-            calculador.RealizarCalculo(orcamento, iccc);
+            orcamento.AdicionaItem(new Item("CANETA", 250.0));
+            orcamento.AdicionaItem(new Item("LÁPIS", 250.0));
+            orcamento.AdicionaItem(new Item("CADERNO", 250.0));
+            orcamento.AdicionaItem(new Item("ESTONJO", 250.0));
+            orcamento.AdicionaItem(new Item("COLA", 250.0));
+            orcamento.AdicionaItem(new Item("RÉGUA", 250.0));
+
+            double desconto = calculador.Calcula(orcamento);
+
+            Console.WriteLine($"desconto condedido: {desconto.ToString("C2")}");
+            Console.ReadKey();
         }
     }
 }

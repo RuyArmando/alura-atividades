@@ -1,9 +1,9 @@
 ﻿using designpatterns.Interfaces;
 using System;
 
-namespace designpatterns.Models.Investimentos
+namespace designpatterns.Models
 {
-    public class Conservador : Investimento
+    public class Conservador : IInvestimento
     {
         public double Calcular(ContaBancaria contaBancaria)
         {

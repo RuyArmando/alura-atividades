@@ -1,9 +1,9 @@
 ﻿using designpatterns.Interfaces;
 using System;
 
-namespace designpatterns.Models.Investimentos
+namespace designpatterns.Models
 {
-    public class Moderado : Investimento
+    public class Moderado : IInvestimento
     {
         private Random random;
         public Moderado()

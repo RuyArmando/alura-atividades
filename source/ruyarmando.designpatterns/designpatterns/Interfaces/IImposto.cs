@@ -2,7 +2,7 @@
 
 namespace designpatterns.Interfaces
 {
-    public interface Imposto
+    public interface IImposto
     {
         double Calcula(Orcamento orcamento);
     }

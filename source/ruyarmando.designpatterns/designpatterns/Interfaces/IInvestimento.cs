@@ -2,7 +2,7 @@
 
 namespace designpatterns.Interfaces
 {
-    public interface Investimento
+    public interface IInvestimento
     {
         double Calcular(ContaBancaria contaBancaria);
     }

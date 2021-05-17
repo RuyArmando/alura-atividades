@@ -1,11 +1,12 @@
 ﻿using designpatterns.Interfaces;
+using designpatterns.Models;
 using System;
 
-namespace designpatterns.Models
+namespace designpatterns.Helpers
 {
     public class CalculadorDeImposto
     {
-        public void RealizarCalculo(Orcamento orcamento, Imposto imposto)
+        public void RealizarCalculo(Orcamento orcamento, IImposto imposto)
         {
             double valor = imposto.Calcula(orcamento);
             Console.WriteLine(valor);

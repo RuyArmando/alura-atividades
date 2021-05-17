@@ -2,7 +2,7 @@
 
 namespace designpatterns.Models
 {
-    public class ISS : Imposto
+    public class ISS : IImposto
     {
         public double Calcula(Orcamento orcamento)
         {

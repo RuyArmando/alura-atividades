@@ -43,18 +43,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\Imposto.cs" />
-    <Compile Include="Interfaces\Investimento.cs" />
-    <Compile Include="Models\CalculadorDeImposto.cs" />
+    <Compile Include="Interfaces\IDesconto.cs" />
+    <Compile Include="Interfaces\IImposto.cs" />
+    <Compile Include="Interfaces\IInvestimento.cs" />
+    <Compile Include="Helpers\CalculadorDeDescontos.cs" />
+    <Compile Include="Helpers\CalculadorDeImposto.cs" />
     <Compile Include="Models\ContaBancaria.cs" />
-    <Compile Include="Models\ICCC.cs" />
-    <Compile Include="Models\ICMS.cs" />
+    <Compile Include="Models\Descontos\DescontoPorCincoItens.cs" />
+    <Compile Include="Models\Descontos\DescontoPorMaisDeQuinhentosReais.cs" />
+    <Compile Include="Models\Descontos\SemDesconto.cs" />
+    <Compile Include="Models\Impostos\ICCC.cs" />
+    <Compile Include="Models\Impostos\ICMS.cs" />
     <Compile Include="Models\Investimentos\Arrojado.cs" />
     <Compile Include="Models\Investimentos\Conservador.cs" />
     <Compile Include="Models\Investimentos\Moderado.cs" />
-    <Compile Include="Models\ISS.cs" />
+    <Compile Include="Models\Impostos\ISS.cs" />
+    <Compile Include="Models\Item.cs" />
     <Compile Include="Models\Orcamento.cs" />
-    <Compile Include="Models\RealizadorDeInvestimentos.cs" />
+    <Compile Include="Helpers\RealizadorDeInvestimentos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

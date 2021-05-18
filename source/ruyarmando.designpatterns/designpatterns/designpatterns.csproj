@@ -58,7 +58,6 @@
     <Compile Include="Models\Descontos\DescontoPorCincoItens.cs" />
     <Compile Include="Models\Descontos\DescontoPorMaisDeQuinhentosReais.cs" />
     <Compile Include="Models\Descontos\DescontoPorVendaCasada.cs" />
-    <Compile Include="Models\Descontos\SemDesconto.cs" />
     <Compile Include="Models\Impostos\ICCC.cs" />
     <Compile Include="Models\Impostos\ICMS.cs" />
     <Compile Include="Models\Investimentos\Arrojado.cs" />
@@ -71,7 +70,6 @@
     <Compile Include="Models\Requisicao.cs" />
     <Compile Include="Models\Requisicoes\CSV.cs" />
     <Compile Include="Models\Requisicoes\Porcento.cs" />
-    <Compile Include="Models\Requisicoes\Invalido.cs" />
     <Compile Include="Models\Requisicoes\XML.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

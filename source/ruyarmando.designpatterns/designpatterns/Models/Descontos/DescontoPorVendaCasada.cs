@@ -17,7 +17,7 @@ namespace designpatterns.Models
             }
             else
             {
-                return Proximo.Desconta(orcamento);
+                return Proximo?.Desconta(orcamento) ?? 0;
             }
         }
 

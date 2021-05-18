@@ -4,7 +4,7 @@ namespace designpatterns.Interfaces
 {
     public interface IDesconto
     {
-        IDesconto Proximo { get; set; }
+        IDesconto Proximo { set; }
         double Desconta(Orcamento orcamento);
     }
 }

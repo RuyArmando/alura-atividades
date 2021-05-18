@@ -8,16 +8,11 @@ namespace designpatterns.Helpers
     {
         public string Exportar(ContaBancaria conta, Requisicao requisicao)
         {
-            IFormato r1 = new CSV();
-            IFormato r2 = new XML();
-            IFormato r3 = new Porcento();
-            IFormato r4 = new Invalido();
+            IFormato r3 = new Porcento(null);
+            IFormato r2 = new XML(r3);
+            IFormato r1 = new CSV(r2);
 
-            r1.Proximo = r2;
-            r2.Proximo = r3;
-            r3.Proximo = r4;
-
-            return r1.Converter(conta, requisicao);
+            return r1.Converter(conta, requisicao) ?? "O formato informado é inválido!";
         }
     }
 }

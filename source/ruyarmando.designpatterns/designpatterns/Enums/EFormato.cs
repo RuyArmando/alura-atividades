@@ -4,6 +4,7 @@
     {
         XML,
         CSV,
-        PORCENTO
+        PORCENTO,
+        XPTO
     }
 }

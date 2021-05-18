@@ -5,7 +5,6 @@ namespace designpatterns.Interfaces
 {
     public interface IFormato
     {
-        IFormato Proximo { get; set; }
         string Converter(ContaBancaria conta, Requisicao requisicao);
     }
 }

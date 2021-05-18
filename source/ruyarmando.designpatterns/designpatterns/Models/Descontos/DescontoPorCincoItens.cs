@@ -1,4 +1,5 @@
 ﻿using designpatterns.Interfaces;
+using System;
 
 namespace designpatterns.Models
 {

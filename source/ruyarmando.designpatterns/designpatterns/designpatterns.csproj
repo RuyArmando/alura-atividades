@@ -10,7 +10,7 @@
     <AssemblyName>designpatterns</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>designpatterns.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,14 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\EFormato.cs" />
+    <Compile Include="Helpers\ExportarContaBancaria.cs" />
     <Compile Include="Interfaces\IDesconto.cs" />
     <Compile Include="Interfaces\IImposto.cs" />
     <Compile Include="Interfaces\IInvestimento.cs" />
     <Compile Include="Helpers\CalculadorDeDescontos.cs" />
     <Compile Include="Helpers\CalculadorDeImposto.cs" />
+    <Compile Include="Interfaces\IFormato.cs" />
     <Compile Include="Models\ContaBancaria.cs" />
     <Compile Include="Models\Descontos\DescontoPorCincoItens.cs" />
     <Compile Include="Models\Descontos\DescontoPorMaisDeQuinhentosReais.cs" />
+    <Compile Include="Models\Descontos\DescontoPorVendaCasada.cs" />
     <Compile Include="Models\Descontos\SemDesconto.cs" />
     <Compile Include="Models\Impostos\ICCC.cs" />
     <Compile Include="Models\Impostos\ICMS.cs" />
@@ -61,6 +68,11 @@
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\Orcamento.cs" />
     <Compile Include="Helpers\RealizadorDeInvestimentos.cs" />
+    <Compile Include="Models\Requisicao.cs" />
+    <Compile Include="Models\Requisicoes\CSV.cs" />
+    <Compile Include="Models\Requisicoes\Porcento.cs" />
+    <Compile Include="Models\Requisicoes\Invalido.cs" />
+    <Compile Include="Models\Requisicoes\XML.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

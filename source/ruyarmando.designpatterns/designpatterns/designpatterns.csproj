@@ -61,6 +61,7 @@
     <Compile Include="Models\Impostos\ICCC.cs" />
     <Compile Include="Models\Impostos\ICMS.cs" />
     <Compile Include="Models\Impostos\ICPP.cs" />
+    <Compile Include="Models\Impostos\IHIT.cs" />
     <Compile Include="Models\Impostos\IKCV.cs" />
     <Compile Include="Models\Impostos\TemplateDeImpostoCondicional.cs" />
     <Compile Include="Models\Investimentos\Arrojado.cs" />
@@ -79,6 +80,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\Relatorios\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

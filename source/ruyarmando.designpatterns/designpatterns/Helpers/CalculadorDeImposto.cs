@@ -6,10 +6,9 @@ namespace designpatterns.Helpers
 {
     public class CalculadorDeImposto
     {
-        public void RealizarCalculo(Orcamento orcamento, IImposto imposto)
+        public double RealizarCalculo(Orcamento orcamento, IImposto imposto)
         {
-            double valor = imposto.Calcula(orcamento);
-            Console.WriteLine(valor);
+            return imposto.Calcula(orcamento);
         }
     }
 }

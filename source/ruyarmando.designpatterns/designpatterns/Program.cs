@@ -9,26 +9,13 @@ namespace designpatterns
     {
         static void Main(string[] args)
         {
-            //var conta = new ContaBancaria("Fulado de Tal", 500);
-            //var conversor = new ExportarContaBancaria();
+            var calculador = new CalculadorDeImposto();
 
-            //var retono = conversor.Exportar(conta, new Requisicao(EFormato.XPTO));
+            var orcamento = new Orcamento(100.0);
+            orcamento.AdicionaItem(new Item("CANETA", 50.0));
+            orcamento.AdicionaItem(new Item("CANETA", 50.0));
 
-            //Console.WriteLine($"XML: {conversor.Exportar(conta, new Requisicao(EFormato.XML))}");
-            //Console.WriteLine($"CSV: {conversor.Exportar(conta, new Requisicao(EFormato.CSV))}");
-            //Console.WriteLine($"Porcento: {conversor.Exportar(conta, new Requisicao(EFormato.PORCENTO))}");
-            //Console.WriteLine($"XPTO: {conversor.Exportar(conta, new Requisicao(EFormato.XPTO))}");
-
-
-            var calculador = new CalculadorDeDescontos();
-
-            var orcamento = new Orcamento(500.0);
-            orcamento.AdicionaItem(new Item("CANETA", 250.0));
-            orcamento.AdicionaItem(new Item("CADERNO", 250.0));
-
-            double desconto = calculador.Calcula(orcamento);
-            Console.WriteLine(desconto);
-
+            Console.WriteLine($"IHIT: {calculador.RealizarCalculo(orcamento, new IHIT())}");
             Console.ReadKey();
         }
     }

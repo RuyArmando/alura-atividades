@@ -60,6 +60,9 @@
     <Compile Include="Models\Descontos\DescontoPorVendaCasada.cs" />
     <Compile Include="Models\Impostos\ICCC.cs" />
     <Compile Include="Models\Impostos\ICMS.cs" />
+    <Compile Include="Models\Impostos\ICPP.cs" />
+    <Compile Include="Models\Impostos\IKCV.cs" />
+    <Compile Include="Models\Impostos\TemplateDeImpostoCondicional.cs" />
     <Compile Include="Models\Investimentos\Arrojado.cs" />
     <Compile Include="Models\Investimentos\Conservador.cs" />
     <Compile Include="Models\Investimentos\Moderado.cs" />

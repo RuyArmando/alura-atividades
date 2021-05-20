@@ -1,8 +1,5 @@
-﻿using designpatterns.Enums;
-using designpatterns.Helpers;
-using designpatterns.Models;
+﻿using designpatterns.Models;
 using System;
-using System.Collections.Generic;
 
 namespace designpatterns
 {
@@ -10,19 +7,16 @@ namespace designpatterns
     {
         static void Main(string[] args)
         {
-            var contas = new List<ContaBancaria>
-            {
-                new ContaBancaria("7735-0", "000123456-X", "Fulano de Tal", 1580),
-                new ContaBancaria("8846-2", "000456789-0", "Beltrano", 1000),
-                new ContaBancaria("9957-8", "000789123-5", "Sicrano", 18000)
-            };
+            Imposto ikcv = new IKCV(new ImpostoMuitoAlto());
+            Imposto icpp = new ICPP(new ICMS());
 
-            var relatorioSimples = new RelatorioSimples();
-            relatorioSimples.Impirmir(contas);
+            var orcamento = new Orcamento(500);
 
-            var relatorioComplexo = new RelatorioComplexo();
-            relatorioComplexo.Impirmir(contas);
+            var valorIKCV = ikcv.Calcula(orcamento);
+            var valorICPP = icpp.Calcula(orcamento);
 
+            Console.WriteLine(valorIKCV);
+            Console.WriteLine(valorICPP);
             Console.ReadKey();
         }
     }

@@ -11,12 +11,12 @@ namespace designpatterns.Models
 
         protected override double MaximaTaxacao(Orcamento orcamento)
         {
-            return orcamento.Valor * 0.13 + 100;
+            return orcamento.Valor * 0.13 + 100 + CalculoDoOutroImposto(orcamento);
         }
 
         protected override double MinimaTaxacao(Orcamento orcamento)
         {
-            return orcamento.Valor * (orcamento.Itens.Count * 0.01);
+            return orcamento.Valor * (orcamento.Itens.Count * 0.01) + CalculoDoOutroImposto(orcamento);
         }
 
         private bool ExisteItensComMesmoNome(Orcamento orcamento)

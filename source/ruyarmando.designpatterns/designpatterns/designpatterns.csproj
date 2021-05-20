@@ -49,7 +49,7 @@
     <Compile Include="Enums\EFormato.cs" />
     <Compile Include="Helpers\ExportarContaBancaria.cs" />
     <Compile Include="Interfaces\IDesconto.cs" />
-    <Compile Include="Interfaces\IImposto.cs" />
+    <Compile Include="Models\Impostos\Imposto.cs" />
     <Compile Include="Interfaces\IInvestimento.cs" />
     <Compile Include="Helpers\CalculadorDeDescontos.cs" />
     <Compile Include="Helpers\CalculadorDeImposto.cs" />
@@ -63,6 +63,7 @@
     <Compile Include="Models\Impostos\ICPP.cs" />
     <Compile Include="Models\Impostos\IHIT.cs" />
     <Compile Include="Models\Impostos\IKCV.cs" />
+    <Compile Include="Models\Impostos\ImpostoMuitoAlto.cs" />
     <Compile Include="Models\Impostos\TemplateDeImpostoCondicional.cs" />
     <Compile Include="Models\Investimentos\Arrojado.cs" />
     <Compile Include="Models\Investimentos\Conservador.cs" />

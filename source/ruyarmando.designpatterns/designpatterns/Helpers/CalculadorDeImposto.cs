@@ -6,7 +6,7 @@ namespace designpatterns.Helpers
 {
     public class CalculadorDeImposto
     {
-        public double RealizarCalculo(Orcamento orcamento, IImposto imposto)
+        public double RealizarCalculo(Orcamento orcamento, Imposto imposto)
         {
             return imposto.Calcula(orcamento);
         }

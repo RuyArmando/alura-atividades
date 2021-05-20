@@ -2,6 +2,7 @@
 using designpatterns.Helpers;
 using designpatterns.Models;
 using System;
+using System.Collections.Generic;
 
 namespace designpatterns
 {
@@ -9,13 +10,19 @@ namespace designpatterns
     {
         static void Main(string[] args)
         {
-            var calculador = new CalculadorDeImposto();
+            var contas = new List<ContaBancaria>
+            {
+                new ContaBancaria("7735-0", "000123456-X", "Fulano de Tal", 1580),
+                new ContaBancaria("8846-2", "000456789-0", "Beltrano", 1000),
+                new ContaBancaria("9957-8", "000789123-5", "Sicrano", 18000)
+            };
 
-            var orcamento = new Orcamento(100.0);
-            orcamento.AdicionaItem(new Item("CANETA", 50.0));
-            orcamento.AdicionaItem(new Item("CANETA", 50.0));
+            var relatorioSimples = new RelatorioSimples();
+            relatorioSimples.Impirmir(contas);
 
-            Console.WriteLine($"IHIT: {calculador.RealizarCalculo(orcamento, new IHIT())}");
+            var relatorioComplexo = new RelatorioComplexo();
+            relatorioComplexo.Impirmir(contas);
+
             Console.ReadKey();
         }
     }

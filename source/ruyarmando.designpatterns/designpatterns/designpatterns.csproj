@@ -71,6 +71,9 @@
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\Orcamento.cs" />
     <Compile Include="Helpers\RealizadorDeInvestimentos.cs" />
+    <Compile Include="Models\Relatorios\RelatorioComplexo.cs" />
+    <Compile Include="Models\Relatorios\RelatorioSimples.cs" />
+    <Compile Include="Models\Relatorios\TemplateDeRelatorio.cs" />
     <Compile Include="Models\Requisicao.cs" />
     <Compile Include="Models\Requisicoes\CSV.cs" />
     <Compile Include="Models\Requisicoes\Porcento.cs" />
@@ -81,8 +84,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\Relatorios\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

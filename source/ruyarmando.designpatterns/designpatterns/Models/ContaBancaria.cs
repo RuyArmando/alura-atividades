@@ -2,12 +2,17 @@
 {
     public class ContaBancaria
     {
-        public ContaBancaria(string titular, double saldo)
+        public ContaBancaria(string agencia, string numero, string titular, double saldo)
         {
-            Saldo = saldo;
+            Agencia = agencia;
+            Numero = numero;
             Titular = titular;
+            Saldo = saldo;
         }
 
+
+        public string Agencia { get; private set; }
+        public string Numero { get; private set; }
         public string Titular { get; private set; }
         public double Saldo { get; private set; }
 

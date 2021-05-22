@@ -49,6 +49,10 @@
     <Compile Include="Enums\EFormato.cs" />
     <Compile Include="Helpers\ExportarContaBancaria.cs" />
     <Compile Include="Interfaces\IDesconto.cs" />
+    <Compile Include="Models\ContaBancaria\ContaAberturaMesCorrente.cs" />
+    <Compile Include="Models\ContaBancaria\ContaSaldoMaiorQueQuinhentosMil.cs" />
+    <Compile Include="Models\ContaBancaria\Filtro.cs" />
+    <Compile Include="Models\ContaBancaria\ContaSaldoMenorQueCem.cs" />
     <Compile Include="Models\Impostos\Imposto.cs" />
     <Compile Include="Interfaces\IInvestimento.cs" />
     <Compile Include="Helpers\CalculadorDeDescontos.cs" />

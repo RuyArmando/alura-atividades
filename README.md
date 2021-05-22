@@ -1,6 +1,6 @@
 ## Boas práticas em C#
 
-Este é um repositório do curso de Boas práticas em C# da Alura, ainda em desenvolvimento, onde estudamos as boas práticas e os padrãos de projetos.
+Este é um repositório do curso de Boas Práticas em C# da Alura, ainda em desenvolvimento, onde estudamos as boas práticas e os padrãos de projetos.
 
 ### 💻 Pré-requisitos
 - [x] [C# e orientação a objetos](https://cursos.alura.com.br/formacao-c-sharp-orientacao-objetos)

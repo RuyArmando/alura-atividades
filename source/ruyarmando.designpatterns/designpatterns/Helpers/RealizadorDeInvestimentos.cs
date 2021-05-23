@@ -9,8 +9,7 @@ namespace designpatterns.Helpers
         public void Calcular(ContaBancaria conta, IInvestimento investimento)
         {
             var resultado = investimento.Calcular(conta);
-            conta.Deposita(resultado * 0.75);
-            Console.WriteLine("Novo saldo: " + conta.Saldo);
+            conta.Deposito(resultado * 0.75);
         }
     }
 }

@@ -49,10 +49,16 @@
     <Compile Include="Enums\EFormato.cs" />
     <Compile Include="Helpers\ExportarContaBancaria.cs" />
     <Compile Include="Interfaces\IDesconto.cs" />
+    <Compile Include="Interfaces\IEstadoDeUmOrcamento.cs" />
+    <Compile Include="Interfaces\IEstodoDeUmaConta.cs" />
     <Compile Include="Models\ContaBancaria\ContaAberturaMesCorrente.cs" />
     <Compile Include="Models\ContaBancaria\ContaSaldoMaiorQueQuinhentosMil.cs" />
     <Compile Include="Models\ContaBancaria\Filtro.cs" />
     <Compile Include="Models\ContaBancaria\ContaSaldoMenorQueCem.cs" />
+    <Compile Include="Models\EstadoOrcamento\Aprovado.cs" />
+    <Compile Include="Models\EstadoOrcamento\EmAprovacao.cs" />
+    <Compile Include="Models\EstadoOrcamento\Finalizado.cs" />
+    <Compile Include="Models\EstadoOrcamento\Reprovado.cs" />
     <Compile Include="Models\Impostos\Imposto.cs" />
     <Compile Include="Interfaces\IInvestimento.cs" />
     <Compile Include="Helpers\CalculadorDeDescontos.cs" />
